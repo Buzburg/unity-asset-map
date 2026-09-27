@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buzburg-unity-asset-map"
+version = "0.1.0"
+description = "Explore Unity asset references without launching the editor."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Buzburg LLC"}]
+dependencies = []
+
+[project.scripts]
+unity-asset-map = "unity_asset_map.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["unity_asset_map*"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+exclude = ["demo-output", "build", "dist"]
+
+[tool.ruff]
+line-length = 110
+extend-exclude = ["demo-output", "build", "dist"]
