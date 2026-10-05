@@ -2,6 +2,10 @@
 
 **By Buzburg LLC** · Apache-2.0
 
+
+> [!NOTE]
+> **In Plain English:** An X-ray dependency viewer for Unity video game files. In game development, deleting or modifying an innocent-looking asset can silently break scenes and prefabs across the game. This tool scans the project's text files and maps out all connections so you know exactly what relies on a file before making changes.
+
 Find out which scenes, prefabs, or other supported text assets reference a file before changing it. Unity Asset Map scans Unity GUID references and lets you inspect both incoming and outgoing links with source line numbers.
 
 It builds a local SQLite index and reports unresolved GUIDs, duplicate ownership, and skipped files. Unity does not need to be running. Binary assets and dependencies that are not represented by supported text GUID references remain outside its scope.
