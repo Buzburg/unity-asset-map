@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "buzburg-unity-asset-map"
-version = "0.1.0"
+version = "0.1.1"
 description = "Explore Unity asset references without launching the editor."
 readme = "README.md"
 requires-python = ">=3.11"

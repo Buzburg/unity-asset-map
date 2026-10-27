@@ -1,10 +1,6 @@
 # Unity Asset Map
 
-**By Buzburg LLC** · Apache-2.0
-
-
-> [!NOTE]
-> **In Plain English:** An X-ray dependency viewer for Unity video game files. In game development, deleting or modifying an innocent-looking asset can silently break scenes and prefabs across the game. This tool scans the project's text files and maps out all connections so you know exactly what relies on a file before making changes.
+**Before you delete that asset, see what depends on it.**
 
 Find out which scenes, prefabs, or other supported text assets reference a file before changing it. Unity Asset Map scans Unity GUID references and lets you inspect both incoming and outgoing links with source line numbers.
 
@@ -50,3 +46,4 @@ python -m ruff check .
 Installed command: `unity-asset-map`. This folder is independently publishable; CI is configured for Windows/Linux and Python 3.11–3.13.
 
 Inspired by [Unity Insight](https://arxiv.org/abs/2609.27585). This is an independent, limited GUID reference utility, not Unity Insight or an official Unity product. No author code or Unity assets are bundled. See LICENSE and NOTICE.
+See [release verification](RELEASE_VERIFICATION.md) for the release checks.
